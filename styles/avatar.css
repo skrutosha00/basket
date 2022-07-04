@@ -1,0 +1,144 @@
+body {
+  background-image: url("../png/game_back.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.wrapper {
+  font-size: 24px;
+}
+
+.pers_cont {
+  position: absolute;
+  left: 0;
+  top: 30%;
+
+  width: 300%;
+  height: 50%;
+
+  transition: left 0.5s ease;
+}
+
+.pers_pic {
+  position: absolute;
+
+  height: 100%;
+}
+
+.power_cont {
+  position: absolute;
+  right: 3%;
+  top: 15%;
+
+  width: 205px;
+  height: 281px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  background: radial-gradient(50% 50% at 50% 50%, #2699e5 0%, #1c509f 100%);
+  border: 1px solid #ffffff;
+  border-radius: 19px;
+}
+
+.power_block {
+  position: relative;
+
+  width: 90%;
+  height: 15%;
+}
+
+.icon {
+  position: absolute;
+  left: -10%;
+  top: -35%;
+
+  max-height: 200%;
+}
+
+.title {
+  text-transform: capitalize;
+  font-size: 0.8em;
+}
+
+.bar {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  width: 70%;
+  height: 10%;
+
+  border-radius: 50px;
+  background-color: #1b2e4d;
+}
+
+.inner_bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  height: 100%;
+  width: 0;
+
+  background-color: #fff;
+  border-radius: 50px;
+  transition: width 0.5s ease;
+}
+
+.control {
+  position: absolute;
+  left: 50%;
+  bottom: 20%;
+  transform: translateX(-50%);
+
+  width: 80%;
+  height: 6%;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.choice {
+  width: 25%;
+  height: 100%;
+
+  background-color: #20315d;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25), 0px -1px 0px #000000,
+    inset 0px 2px 0px rgba(255, 255, 255, 0.49);
+  border: 2px #fff solid;
+  border-radius: 50px;
+
+  transition: background-color 0.5s ease;
+}
+
+.choice.active {
+  background: #2699e5;
+}
+
+@media screen and (max-height: 750px) {
+  .power_cont {
+    transform-origin: top right;
+    transform: scale(0.8);
+  }
+}
+
+@media screen and (min-height: 600px) {
+  .pers_cont {
+    top: 20%;
+    height: 60%;
+  }
+}
+
+@media screen and (min-height: 768px) {
+  .power_cont {
+    transform-origin: top right;
+    transform: scale(1.3);
+  }
+
+  .control {
+    width: 65%;
+  }
+}

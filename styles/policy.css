@@ -1,0 +1,46 @@
+.header {
+  font-size: 4vh;
+  font-weight: 700;
+  text-align: left;
+  margin: 20px;
+}
+
+.text {
+  width: 90%;
+  height: 70%;
+  margin: 20px;
+
+  font-size: 2vh;
+  text-align: left;
+
+  overflow: scroll;
+}
+
+.button {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 60%;
+  max-width: 350px;
+  height: 10%;
+  max-height: 100px;
+
+  background: radial-gradient(
+    99.75% 256.67% at 39.22% -33.33%,
+    #ffdf28 0%,
+    #fffe45 35.73%,
+    #ffca38 75.31%,
+    #ffffdb 97.46%
+  );
+  border: 1px solid #511313;
+  box-shadow: 0px 3px 0px #ea7e00, 0px 9px 30px #ffffff;
+  border-radius: 10px;
+
+  font-size: 3.5vh;
+  font-weight: 900;
+  color: #842626;
+  text-shadow: 0px 4px 9px rgba(255, 255, 255, 0.98), 0px 4px 10px #ffffff,
+    0px 0px 15px #ffffff;
+}

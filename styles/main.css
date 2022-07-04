@@ -1,0 +1,177 @@
+.wrapper {
+  display: none;
+  font-size: 26px;
+}
+
+.card {
+  width: 180px;
+  height: 300px;
+
+  background: linear-gradient(
+    156.04deg,
+    #fafdfe -1.21%,
+    #d4e9fa 27.55%,
+    #4e79b6 61.64%,
+    #e6ebf1 96.36%
+  );
+  border: 1.57895px solid #ffffff;
+  box-shadow: 0px 6.31579px 6.31579px rgba(0, 0, 0, 0.25),
+    inset 0px -3.15789px 15.7895px 1.57895px #3a203a;
+  border-radius: 12.6316px;
+
+  transition: left 0.5s ease;
+}
+
+.basket {
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50%);
+}
+
+.spin {
+  position: absolute;
+  left: 150%;
+  top: 10%;
+  transform: translateX(-50%);
+}
+
+.inner_card {
+  width: 95%;
+  height: 90%;
+
+  position: relative;
+  overflow: hidden;
+
+  margin: 10px auto auto;
+
+  background: radial-gradient(
+    99.35% 104.11% at 23.55% 35.89%,
+    #ffffff 0%,
+    #f29508 64.42%,
+    #552e4b 100%
+  );
+  box-shadow: inset 0px -3.15789px 15.7895px 1.57895px #3a203a;
+  border-radius: 12.6316px;
+}
+
+.title {
+  position: absolute;
+  top: 0;
+
+  width: 100%;
+  height: 17%;
+
+  background: rgba(36, 36, 36, 0.41);
+}
+
+.pers {
+  position: absolute;
+  left: 2.5%;
+  top: 20%;
+
+  max-width: 95%;
+}
+
+.spin_back {
+  width: 100%;
+  height: 100%;
+}
+
+.control {
+  position: absolute;
+  top: calc(12% + 300px);
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  justify-content: space-between;
+
+  width: 144px;
+  height: 25px;
+}
+
+.control > div {
+  height: 100%;
+  width: 40%;
+
+  border-radius: 60px;
+  background-color: #47deff;
+
+  transition: background-color 0.5s ease;
+}
+
+.control .active {
+  background-color: #fffcfc;
+}
+
+.button {
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translateX(-50%);
+
+  width: 60%;
+  max-width: 350px;
+  height: 10%;
+
+  background: linear-gradient(180deg, #cb0018 0%, #c64848 35.21%, #c50000 100%);
+  box-shadow: 0px -1px 0px #000000, inset 0px 2px 0px rgba(255, 255, 255, 0.49);
+  border-radius: 10px;
+}
+
+.footer_pic {
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  transform: translateX(-50%);
+
+  max-width: 70%;
+}
+
+@media screen and (orientation: portrait) {
+  .orientation {
+    display: none;
+  }
+
+  .wrapper {
+    display: block;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .footer_pic {
+    display: none;
+  }
+
+  .button {
+    top: auto;
+    bottom: 5%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .card {
+    width: 225px;
+    height: 375px;
+  }
+
+  .control {
+    top: calc(12% + 375px);
+  }
+
+  .footer_pic {
+    max-width: 350px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .card {
+    width: 270px;
+    height: 450px;
+  }
+
+  .control {
+    top: calc(12% + 450px);
+  }
+}
