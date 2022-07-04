@@ -125,14 +125,14 @@ body {
   }
 }
 
-@media screen and (min-height: 600px) {
+@media screen and (min-width: 600px) {
   .pers_cont {
     top: 20%;
     height: 60%;
   }
 }
 
-@media screen and (min-height: 768px) {
+@media screen and (min-width: 768px) {
   .power_cont {
     transform-origin: top right;
     transform: scale(1.3);
